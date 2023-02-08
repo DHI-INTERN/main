@@ -13,6 +13,12 @@ import Homeopathy from "./components/Homeopathy";
 import Orthopedic from "./components/Orthopedic";
 import PatientRegistration from './components/Patientregister';
 import Doctorregistration from './components/Doctorregistration';
+import Error from './components/Error';
+import D_Amar from "./components/D_Amar";
+import D_Kingsly from "./components/D_Kingsly";
+import D_Kiran from "./components/D_Kiran";
+import D_Shanthi from "./components/D_Shanthi";
+import Paneer from "./components/D_Paneer";
 import {
   BrowserRouter as Router,
   Routes,
@@ -47,9 +53,14 @@ function App() {
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
 
+        <Route path="*" element={<Error />} />
+        <Route path="/search=orthopaedic" element={<Orthopedic />} />
 
-        <Route path="/search=orthopedic" element={<Orthopedic />} />
-        <Route path="*" element={<Footer />} />
+        <Route path="/search=Amar" element={<D_Amar />} />
+        <Route path="/search=Kingsly" element={<D_Kingsly />} />
+        <Route path="/search=Kiran" element={<D_Kiran />} />
+        <Route path="/search=Shanthi" element={<D_Shanthi />} />
+        <Route path="/search=PaneerSelvam" element={<Paneer />} />
         <Route path="/search=homeopathy" element={<Homeopathy />} />
         <Route path="/search=dentist" element={<Dentist />} />
         <Route path="/search=diabetes" element={<Diabetic />} />

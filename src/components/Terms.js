@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Terms.css'
 function Terms() {
     return (
       <center>

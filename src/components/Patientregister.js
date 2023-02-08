@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Patientregistration.css";
+import {FacebookShareButton,WhatsappShareButton,TwitterShareButton,RedditShareButton,TelegramShareButton,LinkedinShareButton,EmailShareButton} from "react-share";
+import {FacebookIcon,WhatsappIcon,TwitterIcon,RedditIcon,TelegramIcon,LinkedinIcon,EmailIcon} from "react-share";
 // import Navbar from './Navbar';
 function Patientregister () {
     return (
@@ -86,9 +88,71 @@ function Patientregister () {
                   Submit
                 </button>
               </Link>
+              <h4>Click the below icons to share the link</h4>
             </div>
+            <div>
+          <container>
+            <segment>
+              <FacebookShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <FacebookIcon logoFillColor='white' size='30px' round={true}></FacebookIcon>
+              </FacebookShareButton>
 
+              <WhatsappShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <WhatsappIcon logoFillColor='white' size='30px' round={true}></WhatsappIcon>
+              </WhatsappShareButton>
+
+              <TwitterShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <TwitterIcon logoFillColor='white' size='30px' round={true}></TwitterIcon>
+              </TwitterShareButton>
+
+              <RedditShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <RedditIcon logoFillColor='white' size='30px' round={true}></RedditIcon>
+              </RedditShareButton>
+
+              <TelegramShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <TelegramIcon logoFillColor='white' size='30px' round={true}></TelegramIcon>
+              </TelegramShareButton>
+
+              <LinkedinShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <LinkedinIcon logoFillColor='white' size='30px' round={true}></LinkedinIcon>
+              </LinkedinShareButton>
+
+              <EmailShareButton
+              url="www.hiremedy.com/preg"
+              quote=""
+              hashtag="#hiremedy"
+              >
+                <EmailIcon  logoFillColor='white' size='30px' round={true}></EmailIcon>
+              </EmailShareButton>
+            </segment>
+          </container>
+          </div>
           </div>
+      
         </form>
       </div></>
     );
